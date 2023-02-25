@@ -114,7 +114,7 @@ module RuTui
 
 		# Static methods to add/load new Fonts
 		def self.add name, file
-			if File.exists?(file)
+			if File.exist?(file)
 
 				data = File.new(file, "r").read.split("\n")
 				config = data[0].split(" ")

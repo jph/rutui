@@ -18,7 +18,7 @@ module RuTui
 			@y = options[:y]
 
 			return if @file.nil?
-			return if !File.exists? @file
+			return if !File.exist? @file
 
 			@img = File.open(@file).read
 

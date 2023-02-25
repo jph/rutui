@@ -22,7 +22,7 @@ module RuTui
 		end
 
 		def create_from_file
-			if File.exists? @file
+			if File.exist? @file
 				data = File.open(@file).read
 				# AXX Format
 				if data.include? '---' and data.include? '| :'
